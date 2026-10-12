@@ -66,7 +66,8 @@ Proposed method, per client and round:
 - Round deadline `D` = median over clients of the simulated time of their fixed (E-epoch) workload.
 - `tau_budget` is also capped at the client's fixed workload, so a fast client never trains more than under FedAvg.
   This cap is an addition to the rule on the slides.
-- `eps = 0.02`; the distance threshold `delta` is switched off (`None`) in Phase 1, so only the loss-progress rule and the deadline are active.
+- Main comparison: `eps = 0.02`, distance threshold `delta` off. The sweep (`--sweep`) also tries eps 0.005-0.05 and delta 0.05 / 0.10.
+- Results and findings: see `PHASE1_REPORT.md` and `results/summary.md`.
 - `delta` is implemented relative to `||w_t||`, a small change from the absolute threshold on the slides.
 
 ## Not done in Phase 1
