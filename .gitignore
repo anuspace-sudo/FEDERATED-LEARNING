@@ -1,0 +1,11 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# downloaded datasets (re-downloaded automatically on first run)
+data/
+
+# console output of local runs
+logs/
